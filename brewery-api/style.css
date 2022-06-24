@@ -139,7 +139,7 @@ footer {
 
 @media screen and (max-width: 900px) {
     nav { 
-        gap: 140px;
+        gap: 200px;
         
     }
     nav li a {
@@ -169,6 +169,11 @@ footer {
 
     .brewery-list {
         height: 250px;
+        transition: none;
+    }
+
+    .brewery-list:hover {
+        transform: none;  
     }
 
     .brew-type,
