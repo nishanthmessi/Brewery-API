@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 600px;
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+nav li a{
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #111;
+}
+
+nav li a:hover {
+    color: #1076e5c7;
+}
+
+input {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2222) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    font-family: inherit;
+    width: 400px;
+    margin: 20px 0;
+}
+
+span {
+    font-weight: 600;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 50px 0;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.search-bar button {
+    box-shadow: rgba(0, 0, 0, 0.2222) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    border: none;
+    width: 100px;
+    margin: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: .9rem;
+    font-weight: 700;
+    transition: 0.15s all ease-in-out;
+}
+
+.search-bar button:hover {
+    background-color: #65b2ff8f;
+    transform: scale(1.1);
+}
+
+.brewery-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 45px; 
+    max-width: 900px;
+    margin: auto;
+}
+
+.brew-name {
+    font-size: 1.5rem;
+}
+
+.brew-type,
+.brew-website,
+.brew-phone,
+.brew-address {
+    font-size: 1.1rem;
+} 
+
+.brewery-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2222) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    border-radius: 10px;
+    text-align: start;
+    transition: 0.15s all ease-in-out;
+    cursor: pointer;
+}
+
+.brewery-list:hover {
+    transform: scale(1.1);  
+}
+
+.brewery-list p {
+    line-height: 28px;
+}
+
+footer {
+    margin: 40px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    nav { 
+        gap: 140px;
+        
+    }
+    nav li a {
+        font-size: 1rem;
+    }
+    img {
+        height: 40px;
+    }
+
+    input {
+        width: 350px;
+        margin: auto;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin: 40px 0;
+    }
+
+    .sub-title {
+        font-size: 1.35rem;
+    }
+
+    .brewery-container {
+        padding: 10px;
+    }
+
+    .brewery-list {
+        height: 250px;
+    }
+
+    .brew-type,
+    .brew-website,
+    .brew-phone,
+    .brew-address {
+        font-size: 1rem;
+    } 
+
+    .search-bar h1{
+        margin-bottom: 10px;
+    }
+}
